@@ -1,26 +1,26 @@
 class Hu < Formula
   desc "A tiny cross-platform CLI for checking local AI tool usage"
   homepage "https://github.com/SunChJ/happyusage"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/SunChJ/happyusage/releases/download/v#{version}/hu-darwin-arm64.tar.gz"
-      sha256 "996af7869da5b4481569d5504a02721d852ef668b937b50f6716957234c3b038"
+      sha256 "ed3d453490fe36e4d817792cb2119656f44764d347275ced52bedfa5f5589c6b"
     elsif Hardware::CPU.intel?
       url "https://github.com/SunChJ/happyusage/releases/download/v#{version}/hu-darwin-amd64.tar.gz"
-      sha256 "5b160dddea63a2672fb9c6915fba60d5f269a99bcd3f8f608a15db0ef860a632"
+      sha256 "66d1f5b5e7a6baa39ee954649031e6722d7bba5864b25d2eb6ecb4309003a928"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/SunChJ/happyusage/releases/download/v#{version}/hu-linux-arm64.tar.gz"
-      sha256 "43e50a4775e2a29be6be8eb6ce94a3adbea21381a861af8ff90291ff0613c7d3"
+      sha256 "c99e604126619498b127fe02048fa3d2575481aa3386ac20ee51bf840aaba822"
     elsif Hardware::CPU.intel?
       url "https://github.com/SunChJ/happyusage/releases/download/v#{version}/hu-linux-amd64.tar.gz"
-      sha256 "43c8c1817f3735df180f141c81642a9464bc6230646f210dd4c5405488f642ca"
+      sha256 "81e80070c588352d125e484f395f94b6c98ecf213601eff47e7166c1772e1959"
     end
   end
 
